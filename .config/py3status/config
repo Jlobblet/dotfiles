@@ -1,0 +1,105 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+}
+
+# order += "timezone_clock"
+# order += "mail"
+order += "xsel"
+order += "frame internet"
+order += "frame battery"
+order += "disk /"
+order += "group load"
+order += "memory"
+order += "volume_status speakers"
+order += "volume_status mic"
+order += "clock"
+
+xsel {
+        max_size = 30
+        on_click 1 = "exec xsel --clear"
+}
+
+apt_updates {
+        format = "[?not_zero: {apt}🠕]"
+}
+
+frame internet {
+        format_separator = " "
+        whatismyip {
+                mode = "status"
+        }
+        frame internet_i {
+                format = "{output}{button}"
+                format_separator = " "
+                open = false
+
+                ipv6 {}
+
+                wireless _first_ {
+                        format_up = "W: (%quality at %essid) %ip"
+                        format_down = "W: down"
+                }
+
+                ethernet _first_ {
+                        format_up = "E: %ip (%speed) "
+                        format_down = "E: down "
+                }
+        }
+}
+
+frame battery {
+        format_separator = " "
+        battery_level {}
+        frame battery_i {
+                format = "{output}{button}"
+                format_separator = " "
+                open = false
+                battery all {
+                        format = "%status %percentage %remaining "
+                }
+        }
+}
+
+disk "/" {
+        format = "%avail"
+}
+
+group load {
+        loadavg {
+                format = "[\?color=1avg {1avg}%] [\?color=5avg {5avg}%] [\?color=15avg {15avg}%]"
+        }
+        loadavg {
+                format = "[\?color=1avg {1min}] [\?color=5avg {5min}] [\?color=15avg {15min}]"
+        }
+}
+
+memory {
+        format = "%used (%percentage_used)"
+}
+
+volume_status speakers {
+        blocks = "🔈🔉🔊"
+        format = "{icon}{percentage}%"
+        format_muted = "🔇{percentage}%"
+}
+
+volume_status mic {
+        format = "🎙️{percentage}%"
+        format_muted = "🎙️{percentage}%"
+        is_input = true
+}
+
+clock {
+#         format_time = "%Y-%m-%d %H:%M:%S"
+         format_time = "%c"
+}
+

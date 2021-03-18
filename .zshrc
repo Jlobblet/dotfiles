@@ -31,6 +31,7 @@ antigen apply
 
 # Autosuggestions settings
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 # Some aliases
 alias ls='ls --color=auto'

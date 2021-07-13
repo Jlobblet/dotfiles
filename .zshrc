@@ -62,5 +62,20 @@ bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode che
 # Dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-export PATH
+# Conda, a package manager
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/jlb/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/jlb/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/jlb/anaconda3/etc/profile.d/conda.sh"
+    else
+        path+=("/home/jlb/anaconda3/bin")
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
+export PATH

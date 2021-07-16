@@ -16,6 +16,7 @@ A collection of dotfiles (.name) that I use frequently.
 
 - [anaconda3](https://www.anaconda.com/products/individual)
 - [dotnet](https://dotnet.microsoft.com/download)
+- [go](https://golang.org/)
 - [python3](https://www.python.org/)
 - [rust](https://www.rust-lang.org/)
 - [ruby](https://www.ruby-lang.org/en/)
@@ -24,6 +25,7 @@ A collection of dotfiles (.name) that I use frequently.
 
 - [bat](https://github.com/sharkdp/bat)
 - [bat-extras](https://github.com/eth-p/bat-extras)
+- [cheat](https://github.com/cheat/cheat)
 - [dust](https://github.com/bootandy/dust)
 - [fd](https://github.com/sharkdp/fd)
 - [glances](https://github.com/nicolargo/glances)

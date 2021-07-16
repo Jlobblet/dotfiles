@@ -78,6 +78,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Go
+path+=("/usr/local/go/bin/")
+
 # Command line tools
 source "$HOME/.config/broot/launcher/bash/br" # This seems to work fine
 

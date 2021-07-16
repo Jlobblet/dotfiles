@@ -21,7 +21,6 @@ bindkey -e
 
 # Antigen packages
 antigen bundle git
-antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
@@ -34,17 +33,23 @@ antigen apply
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 
+# HSTR configuration - add this to ~/.zshrc
+alias hh=hstr                    # hh to be alias for hstr
+setopt histignorespace           # skip cmds w/ leading space from history
+export HSTR_CONFIG=hicolor       # get more colors
+bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
+
 # Some aliases
-alias ls='ls --color=auto'
+alias ls='lsd --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias ll='ls -ltrha'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='lsd -ltrha'
+alias la='lsd -A'
+alias l='lsd -F'
 
 # Rust
 source "$HOME/.cargo/env"
@@ -53,12 +58,6 @@ source "$HOME/.cargo/env"
 path+=("$HOME/.rbenv/bin")
 eval "$(rbenv init -)"
 path+=("$HOME/.rbenv/plugins/ruby-build/bin")
-
-# HSTR configuration - add this to ~/.zshrc
-alias hh=hstr                    # hh to be alias for hstr
-setopt histignorespace           # skip cmds w/ leading space from history
-export HSTR_CONFIG=hicolor       # get more colors
-bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
 
 # Dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
@@ -79,4 +78,10 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Command line tools
+source "$HOME/.config/broot/launcher/bash/br" # This seems to work fine
+
+# Re-export path
 export PATH
+
+

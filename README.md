@@ -27,7 +27,9 @@ A collection of dotfiles (.name) that I use frequently.
 - [dust](https://github.com/bootandy/dust)
 - [fd](https://github.com/sharkdp/fd)
 - [hyperfine](https://github.com/Peltoche/lsd)
+- [i3](https://i3wm.org/)
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 - [procs](https://github.com/dalance/procs)
+- [py3status](https://github.com/ultrabug/py3status)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 

@@ -26,6 +26,7 @@ A collection of dotfiles (.name) that I use frequently.
 - [bat-extras](https://github.com/eth-p/bat-extras)
 - [dust](https://github.com/bootandy/dust)
 - [fd](https://github.com/sharkdp/fd)
+- [glances](https://github.com/nicolargo/glances)
 - [hyperfine](https://github.com/Peltoche/lsd)
 - [i3](https://i3wm.org/)
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)

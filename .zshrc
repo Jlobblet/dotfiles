@@ -1,9 +1,9 @@
-source /home/jlb/.antigen.zsh
+source "$HOME/.antigen.zsh"
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' matcher-list '' 'r:|[._-; ]=* r:|=*' 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
-zstyle :compinstall filename '/home/jlb/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 autoload -Uz compinit
@@ -16,7 +16,8 @@ export SAVEHIST=1024
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-. /home/jlb/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
+# Powerline setup
+. "$HOME.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh"
 
 # Antigen packages
 antigen bundle git
@@ -65,14 +66,14 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 # Conda, a package manager
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jlb/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$("$HOME/anaconda3/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/jlb/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/jlb/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/anaconda3/etc/profile.d/conda.sh"
     else
-        path+=("/home/jlb/anaconda3/bin")
+        path+=("$HOME/anaconda3/bin")
     fi
 fi
 unset __conda_setup

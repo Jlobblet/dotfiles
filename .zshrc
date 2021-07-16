@@ -17,7 +17,7 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 # Powerline setup
-. "$HOME.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh"
+. "$HOME/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh"
 
 # Antigen packages
 antigen bundle git

@@ -29,6 +29,7 @@ A collection of dotfiles (.name) that I use frequently.
 - [glances](https://github.com/nicolargo/glances)
 - [hyperfine](https://github.com/Peltoche/lsd)
 - [i3](https://i3wm.org/)
+- [moreutils](https://joeyh.name/code/moreutils/)
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 - [procs](https://github.com/dalance/procs)
 - [py3status](https://github.com/ultrabug/py3status)

@@ -16,6 +16,10 @@ export SAVEHIST=16384
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
+# Ctrl + Left/Right arrows to skip a word
+bindkey $terminfo[kLFT5] backward-word
+bindkey $terminfo[kRIT5] forward-word
+
 # Powerline setup
 . "$HOME/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh"
 

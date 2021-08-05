@@ -11,8 +11,8 @@ compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 export HISTFILE=~/.histfile
-export HISTSIZE=1024
-export SAVEHIST=1024
+export HISTSIZE=16384
+export SAVEHIST=16384
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
@@ -81,10 +81,18 @@ unset __conda_setup
 # Go
 path+=("/usr/local/go/bin/")
 
+# SDKMan, for Java
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 # Command line tools
 source "$HOME/.config/broot/launcher/bash/br" # This seems to work fine
 
 # Re-export path
 export PATH
 
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 

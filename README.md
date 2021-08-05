@@ -20,6 +20,7 @@ A collection of dotfiles (.name) that I use frequently.
 - [python3](https://www.python.org/)
 - [rust](https://www.rust-lang.org/)
 - [ruby](https://www.ruby-lang.org/en/)
+- [sdkman](https://sdkman.io/)
 
 ## Other useful things I might want
 

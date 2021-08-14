@@ -26,6 +26,7 @@ A collection of dotfiles (.name) that I use frequently.
 
 - [bat](https://github.com/sharkdp/bat)
 - [bat-extras](https://github.com/eth-p/bat-extras)
+- [bottom](https://github.com/ClementTsang/bottom)
 - [cheat](https://github.com/cheat/cheat)
 - [dust](https://github.com/bootandy/dust)
 - [fd](https://github.com/sharkdp/fd)

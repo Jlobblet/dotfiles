@@ -55,6 +55,9 @@ alias ll='lsd -ltrha'
 alias la='lsd -A'
 alias l='lsd -F'
 
+# Exports
+export EDITOR=/usr/bin/vim
+
 # Rust
 source "$HOME/.cargo/env"
 

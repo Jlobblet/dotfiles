@@ -31,7 +31,7 @@ A collection of dotfiles (.name) that I use frequently.
 - [dust](https://github.com/bootandy/dust)
 - [fd](https://github.com/sharkdp/fd)
 - [glances](https://github.com/nicolargo/glances)
-- [hyperfine](https://github.com/Peltoche/lsd)
+- [hyperfine](https://github.com/sharkdp/hyperfine)
 - [i3](https://i3wm.org/)
 - [moreutils](https://joeyh.name/code/moreutils/)
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)

@@ -58,48 +58,26 @@ alias l='lsd -F'
 # Exports
 export EDITOR=/usr/bin/vim
 
-# Rust
-source "$HOME/.cargo/env"
+# Add local autocompletion scripts
+fpath+=("$HOME/.local/share/zsh/completions")
 
-# Ruby
-path+=("$HOME/.rbenv/bin")
-eval "$(rbenv init -)"
-path+=("$HOME/.rbenv/plugins/ruby-build/bin")
+# envmng
+envmng() {
+	eval $(envmng-exe "$@")
+}
+
+# Rust
+path+=("$HOME/.cargo/bin")
 
 # Dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-# Conda, a package manager
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$("$HOME/anaconda3/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/anaconda3/etc/profile.d/conda.sh"
-    else
-        path+=("$HOME/anaconda3/bin")
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 # Go
 path+=("/usr/local/go/bin/")
-
-# SDKMan, for Java
-source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Command line tools
 source "$HOME/.config/broot/launcher/bash/br" # This seems to work fine
 
 # Re-export path
 export PATH
-
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 

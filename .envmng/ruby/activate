@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+path+=("$HOME/.rbenv/bin")
+eval "$(rbenv init -)"
+path+=("$HOME/.rbenv/plugins/ruby-build/bin")
+export PATH
+

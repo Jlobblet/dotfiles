@@ -8,6 +8,7 @@ A collection of dotfiles (.name) that I use frequently.
 - [antigen](https://github.com/zsh-users/antigen)
 - [hstr](https://github.com/dvorka/hstr)
 - [powerline](https://github.com/powerline/powerline)
+- [envmng](https://github.com/Jlobblet/envmng)
 - [lsd](https://github.com/Peltoche/lsd)
 - [delta](https://github.com/dandavison/delta)
 - [broot](https://github.com/Canop/broot)

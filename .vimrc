@@ -30,7 +30,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 
 " Code completion
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.81'}
 
 " Syntax highlighting for EVERYTHING
 Plug 'sheerun/vim-polyglot'
